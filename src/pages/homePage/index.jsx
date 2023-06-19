@@ -28,7 +28,7 @@ function index() {
           alt="logo"
         />
 
-        <p className="font-bold">Ташкент-2023 г.</p>
+        <p className="font-bold">Tiiame-2023 г.</p>
       </Box>
     </Container>
   );
