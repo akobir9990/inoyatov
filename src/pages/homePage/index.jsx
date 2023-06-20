@@ -20,7 +20,6 @@ function index() {
         <h1 className="md:text-[50px] text-[35px] my-5 text-center font-bold">
           Maxsus fanlarni o`qitish metodikasi
         </h1>
-        {/* <h2 className="md:text-3xl text-4 mb-4"></h2> */}
         <h3 className="">"TIQXMMI" MTU talabalari uchun</h3>
         <img
           className="py-7 md:w-[400px] w-[200px] text-center"
@@ -28,7 +27,7 @@ function index() {
           alt="logo"
         />
 
-        <p className="font-bold">Tiiame-2023 г.</p>
+        <p className="font-bold">Toshkent-2023 г.</p>
       </Box>
     </Container>
   );

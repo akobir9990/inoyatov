@@ -14,7 +14,7 @@ export default function MediaCard() {
           <img
             className=" max-w-[150px] rounded-lg"
             src={ismailova}
-            alt="Tadjibekova Dilnoza Baxtiyarovna"
+            alt="Ismailova Zuxra Karabayevna"
           />
         </div>
 
