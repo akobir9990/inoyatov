@@ -98,10 +98,8 @@ function Quiz() {
                     : "") +
                   (scorePercent > 90 ? "bg-[green]" : "")
                 }
-              >
-                {scorePercent}%
-              </div>
-              {/* <div className="bg-white h-9 min-w-0 max-w-[100%]"></div> */}
+              ></div>
+              {scorePercent}%
             </div>
             <div className="sm:text-[40px] text-[30px]">
               {scorePercent < 60 ? (
