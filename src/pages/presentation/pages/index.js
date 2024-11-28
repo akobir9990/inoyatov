@@ -3,3 +3,8 @@ export { default as PresentationTwo } from "./two";
 export { default as PresentationThree } from "./three";
 export { default as PresentationFour } from "./four";
 export { default as PresentationFive } from "./five";
+export { default as PresentationSix } from "./six";
+export { default as PresentationSeven } from "./seven";
+export { default as PresentationEight } from "./eight";
+export { default as PresentationNine } from "./nine";
+export { default as PresentationTen } from "./ten";

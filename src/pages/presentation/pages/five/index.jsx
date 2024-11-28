@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
-import one from "./img/1.jpeg";
-import two from "./img/2.jpeg";
-import three from "./img/3.jpeg";
-import four from "./img/4.jpeg";
-import five from "./img/5.jpeg";
-import six from "./img/6.jpeg";
-import seven from "./img/7.jpeg";
-import eight from "./img/8.jpeg";
-import nine from "./img/9.jpeg";
-import ten from "./img/10.jpeg";
-import eleven from "./img/11.jpeg";
-import twelve from "./img/12.jpeg";
-import threeTeen from "./img/13.jpeg";
-import fourTeen from "./img/14.jpeg";
+import one from "./img/1.png";
+import two from "./img/2.png";
+import three from "./img/3.png";
+import four from "./img/4.png";
+import five from "./img/5.png";
+import six from "./img/6.png";
+import seven from "./img/7.png";
+import eight from "./img/8.png";
+import nine from "./img/9.png";
+import ten from "./img/10.png";
+import eleven from "./img/11.png";
+import twelve from "./img/12.png";
+import thirteen from "./img/13.png";
+import "./style.css";
 
 import { Button, Container, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
@@ -36,8 +36,7 @@ function One() {
     { id: 10, name: ten },
     { id: 11, name: eleven },
     { id: 12, name: twelve },
-    { id: 13, name: threeTeen },
-    { id: 14, name: fourTeen },
+    { id: 13, name: thirteen },
   ];
   return (
     <Container sx={{ width: "100%" }}>

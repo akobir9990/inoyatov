@@ -12,8 +12,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 // import AdbIcon from "@mui/icons-material/Adb";
-import woman from "../../assets/images/whiteWoman.png";
-import logo1 from "../../assets/logo1.png";
+import woman from "../../assets/images/inoyatov.png";
+import logo1 from "../../assets/logo.png";
 import Router from "../../router/router";
 import { NavLink } from "react-router-dom";
 import "../../router/const";
@@ -22,19 +22,23 @@ import {
   ABOUT_PAGE,
   AUTHOR_PAGE,
   HOME_PAGE,
-  PRACTICE_PAGE,
+  TASKS_PAGE,
   PRESENTATION_PAGE,
   TEST_PAGE,
+  // LABORATORY_PAGE,
+  METHOD_PAGE,
 } from "../../router/const";
 
 const pages = [
   { id: 1, name: "Ma'ruza", path: PRESENTATION_PAGE },
-  { id: 2, name: "Amaliyot", path: PRACTICE_PAGE },
-  { id: 3, name: "Testlar", path: TEST_PAGE },
+  { id: 2, name: "Topshiriq", path: TASKS_PAGE },
+  { id: 3, name: "Metodika", path: METHOD_PAGE },
+  { id: 4, name: "Test", path: TEST_PAGE },
+  // { id: 3, name: "Laboratoriya", path: LABORATORY_PAGE },
 ];
 const settings = [
-  { id: 1, name: "Об авторе", path: AUTHOR_PAGE },
-  { id: 2, name: "О программе", path: ABOUT_PAGE },
+  { id: 1, name: "Muallif haqida", path: AUTHOR_PAGE },
+  { id: 2, name: "Dastur haqida", path: ABOUT_PAGE },
 ];
 
 function ResponsiveAppBar() {
@@ -55,8 +59,6 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  // const nameOfScinece = "MFO'M";
-
   return (
     <div>
       <AppBar position="fixed">
@@ -66,7 +68,6 @@ function ResponsiveAppBar() {
               className="flex items-center justify-center"
               to={HOME_PAGE}
             >
-              {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
               <Typography
                 variant="h6"
                 noWrap
@@ -81,7 +82,6 @@ function ResponsiveAppBar() {
                 }}
               >
                 <img className="h-[50px]" src={logo1} alt="" />
-                {/* <Avatar alt="Remy Sharp" src={logo1} /> */}
               </Typography>
             </NavLink>
 

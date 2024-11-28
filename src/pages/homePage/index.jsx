@@ -1,33 +1,27 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import "./style.css";
-import logo from "../../assets/ava/logo1.jpeg";
 function index() {
   return (
-    <Container className="py-[20px]">
-      <Box className=" p-2 md:p-5 flex flex-col items-center py-10 text-white backdrop-blur-md bg-white/30 rounded-lg ">
-        <h1 className="md:text-[30px] text-[15px] p-5 text-center">
-          "Toshkent irrigatsiya va qishloq xo'jaligini mexanizatsiyalashtirish
-          muhandislari instituti "Milliy tadqiqot universiteti
+    <Container className="min-h-[calc(100vh-56px)]">
+      <Box className="relative p-2 md:p-5 flex flex-col gap-10 items-center py-10 backdrop-blur-md bg-white/30 rounded-lg min-h-[90vh]">
+        <h1 className="md:text-[30px] text-[15px] text-center p-0">
+          “TIQXMMI” MTU Buxoro tabiiy resurslarini boshqarish instituti <br />
+          “Irrigatsiya va melioratsiya” kafedrasi
         </h1>
         <h2 className="md:text-[30px] text-[20px] font-bold ">
-          Ismailova Zuxra Karabayevna
-        </h2>
-        <h2 className="md:text-[30px] text-[20px] font-bold ">
-          Mustafoyeva Durdona Asilovna
+          Inoyatov Ikrom Shaxrilloyevich
         </h2>
 
         <h1 className="md:text-[50px] text-[35px] my-5 text-center font-bold">
-          Maxsus fanlarni o`qitish metodikasi
+          Suv ta'minoti
         </h1>
-        <h3 className="">"TIQXMMI" MTU talabalari uchun</h3>
-        <img
-          className="py-7 md:w-[400px] w-[200px] text-center"
-          src={logo}
-          alt="logo"
-        />
+        <h3 className="text-center leading-6">
+          “TIQXMMI” MTU Buxoro tabiiy resurslarini boshqarish instituti <br />
+          60812900 - "Suv ta’minoti muhandislik tizimi" yo'nalishi uchun
+        </h3>
 
-        <p className="font-bold">Toshkent-2023 г.</p>
+        <p className="absolute font-bold bottom-3">Buxoro-2024</p>
       </Box>
     </Container>
   );
