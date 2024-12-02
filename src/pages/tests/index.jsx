@@ -73,7 +73,7 @@ function Quiz() {
   // console.log("scorePercent => ", scorePercent, typeof scorePercent);
 
   return (
-    <div className="h-[100vh]">
+    <div className="h-[calc(100vh-76px)] mt-3">
       {showScore ? (
         <div>
           <div className="border-[2px] border-[solid] backdrop-blur-md bg-white/30 rounded-md py-4 px-3">

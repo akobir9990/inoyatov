@@ -20,7 +20,7 @@ export default function BasicCard() {
     <Box
       sx={{
         minWidth: 275,
-        minHeight: "calc(100vh-56px)",
+        minHeight: "calc(100vh-76px)",
         paddingBottom: "10px",
       }}
     >
@@ -34,7 +34,7 @@ export default function BasicCard() {
         >
           <CardContent>
             <h1 className="" color="text.secondary" gutterBottom>
-              Metod
+              metod
             </h1>
             <Typography variant="h5" component="div">
               {item.themeName}
