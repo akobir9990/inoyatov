@@ -4,7 +4,7 @@ export { default as ErrorPage } from "./errorPage";
 export { default as HomePage } from "./homePage";
 export { default as TaskPage } from "./task";
 export { default as Presentation } from "./presentation";
-// export { default as Laboratory } from "./laboratory";
+export { default as Laboratory } from "./laboratory";
 export { default as Task } from "./task";
 export { default as Method } from "./methodics";
 export { default as Tests } from "./tests";
