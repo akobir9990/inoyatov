@@ -1,6 +1,6 @@
 {
-  "short_name": "Finance",
-  "name": "Finance",
+  "short_name": "QYST",
+  "name": "Qishloq va yaylovlar suv ta'minoti",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
