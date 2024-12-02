@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-// import AdbIcon from "@mui/icons-material/Adb";
 import woman from "../../assets/images/inoyatov.png";
 import logo1 from "../../assets/logo.png";
 import Router from "../../router/router";
@@ -25,16 +24,16 @@ import {
   TASKS_PAGE,
   PRESENTATION_PAGE,
   TEST_PAGE,
-  // LABORATORY_PAGE,
   METHOD_PAGE,
+  LABORATORY_PAGE,
 } from "../../router/const";
 
 const pages = [
   { id: 1, name: "Ma'ruza", path: PRESENTATION_PAGE },
   { id: 2, name: "Topshiriq", path: TASKS_PAGE },
   { id: 3, name: "Metodika", path: METHOD_PAGE },
-  { id: 4, name: "Test", path: TEST_PAGE },
-  // { id: 3, name: "Laboratoriya", path: LABORATORY_PAGE },
+  { id: 4, name: "Laboratoriya", path: LABORATORY_PAGE },
+  { id: 5, name: "Test", path: TEST_PAGE },
 ];
 const settings = [
   { id: 1, name: "Muallif haqida", path: AUTHOR_PAGE },

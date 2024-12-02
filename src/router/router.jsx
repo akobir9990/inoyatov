@@ -10,7 +10,7 @@ import {
   PRESENTATION_PAGE,
   METHOD_PAGE,
   TEST_PAGE,
-  // LABORATORY_PAGE,
+  LABORATORY_PAGE,
 } from "./const";
 
 import {
@@ -49,8 +49,10 @@ import {
   Presentation,
   Tests,
   Method,
+  Laboratory,
 } from "../pages";
 import { MethodOne } from "../pages/methodics/pages";
+import { LaboratoryOne } from "../pages/laboratory/pages";
 
 function router() {
   return (
@@ -87,10 +89,10 @@ function router() {
           <Route path="11" element={<TaskEleve />} />
           <Route path="12" element={<TaskTvelwe />} />
         </Route>
-        {/* <Route path={LABORATORY_PAGE}>
+        <Route path={LABORATORY_PAGE}>
           <Route path="" element={<Laboratory />} />
           <Route path="1" element={<LaboratoryOne />} />
-        </Route> */}
+        </Route>
         <Route path={METHOD_PAGE}>
           <Route path="" element={<Method />} />
           <Route path="1" element={<MethodOne />} />
