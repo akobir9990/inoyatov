@@ -2146,12 +2146,13 @@ export const questions = [
     questionText:
       "Gidropnevmatik moslamalari qishloq suv taminotida qo’llanadimi?",
     answerOptions: [
-      { id: 1, answerText: "ha, qo’llanadi", isCorrect: true },
       {
-        id: 2,
+        id: 1,
         answerText: "faqat yuqori gavatli binolar uchun",
         isCorrect: false,
       },
+      { id: 2, answerText: "ha, qo’llanadi", isCorrect: true },
+
       {
         id: 3,
         answerText: "yonginni o’chirish uchun ishlatiladi",
@@ -2168,18 +2169,18 @@ export const questions = [
     questionText:
       "Qishloq xo‘jalik suv ta’minotida moslashtruvchi inshootlar turi?",
     answerOptions: [
+      { id: 1, answerText: "pnevmonasos moslamalari", isCorrect: false },
       {
-        id: 1,
-        answerText:
-          "bosimli   suv minoralari, rezervuarlar, pnevmonasos moslamalari",
-        isCorrect: true,
-      },
-      { id: 2, answerText: "pnevmonasos moslamalari", isCorrect: false },
-      {
-        id: 3,
+        id: 2,
         answerText:
           "nasos stansiyalari, rezervuarlari, bosimli suv minorasi, bosimli quvurlar, filtrla va nasos stansiyalari",
         isCorrect: false,
+      },
+      {
+        id: 3,
+        answerText:
+          "bosimli   suv minoralari, rezervuarlar, pnevmonasos moslamalari",
+        isCorrect: true,
       },
       {
         id: 4,
@@ -2193,13 +2194,13 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "bosimli suv minorasining o‘rniga ishlatiladi",
-        isCorrect: true,
+        answerText: "bino ichida suv uzatishni moslashtirish uchun",
+        isCorrect: false,
       },
       {
         id: 2,
-        answerText: "bino ichida suv uzatishni moslashtirish uchun",
-        isCorrect: false,
+        answerText: "bosimli suv minorasining o‘rniga ishlatiladi",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -2212,12 +2213,12 @@ export const questions = [
   {
     questionText: "Suv berish sxemasini tanlash nimaga bog‘liq?",
     answerOptions: [
+      { id: 1, answerText: "hisobiy suv sarfiga", isCorrect: false },
       {
-        id: 1,
+        id: 2,
         answerText: "relefga, qishloqni planirovkasiga, manba joylashganiga",
         isCorrect: true,
       },
-      { id: 2, answerText: "hisobiy suv sarfiga", isCorrect: false },
       { id: 3, answerText: "tarmoq tizimiga", isCorrect: false },
       {
         id: 4,
@@ -2233,14 +2234,14 @@ export const questions = [
       {
         id: 1,
         answerText:
-          "tarmoq suv istemolchilar joylashuvi, tabiiy  va suniy to‘siqlarning mavjudligi, joy relefi va kommu-nikatsiyalar joylashishiga bog‘liq  asosan xalqasimon tarmoqlari qo‘llaniladi",
-        isCorrect: true,
+          "shaxar va qishloqlarning katta kichikligi, yo’llarning keng yoki torligi, uylarning past yoki balandligi, quvurlarning diametrini katta yoki kichikligini e’tiborga olib  asosan (ko‘pincha) shohsimon tarmoqlarga bo‘linadi, chunki  iqtisodiy qulay",
+        isCorrect: false,
       },
       {
         id: 2,
         answerText:
-          "shaxar va qishloqlarning katta kichikligi, yo’llarning keng yoki torligi, uylarning past yoki balandligi, quvurlarning diametrini katta yoki kichikligini e’tiborga olib  asosan (ko‘pincha) shohsimon tarmoqlarga bo‘linadi, chunki  iqtisodiy qulay",
-        isCorrect: false,
+          "tarmoq suv istemolchilar joylashuvi, tabiiy  va suniy to‘siqlarning mavjudligi, joy relefi va kommu-nikatsiyalar joylashishiga bog‘liq  asosan xalqasimon tarmoqlari qo‘llaniladi",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -2259,17 +2260,17 @@ export const questions = [
   {
     questionText: "Qanday suv berish sxemalarini bilasiz?",
     answerOptions: [
+      { id: 1, answerText: "yo‘lak rezervuarli", isCorrect: false },
       {
-        id: 1,
+        id: 2,
+        answerText: "kombinatsiyalashtirilgan, kontrezevuarli",
+        isCorrect: false,
+      },
+      {
+        id: 3,
         answerText:
           "yo‘lak rezervuarli, kontrezevuarli, kombinatsiyalashtirilgan",
         isCorrect: true,
-      },
-      { id: 2, answerText: "yo‘lak rezervuarli", isCorrect: false },
-      {
-        id: 3,
-        answerText: "kombinatsiyalashtirilgan, kontrezevuarli",
-        isCorrect: false,
       },
       {
         id: 4,
@@ -2281,8 +2282,8 @@ export const questions = [
   {
     questionText: "Iqtisodiy quvur diametrni aniqlash formulasi?",
     answerOptions: [
-      { id: 1, answerText: "d=E0,15q0,43", isCorrect: true },
-      { id: 2, answerText: "D=2R", isCorrect: false },
+      { id: 1, answerText: "D=2R", isCorrect: false },
+      { id: 2, answerText: "d=E0,15q0,43", isCorrect: true },
       { id: 3, answerText: "D=Eq", isCorrect: false },
       { id: 4, answerText: "D=PR", isCorrect: false },
     ],
@@ -2290,13 +2291,13 @@ export const questions = [
   {
     questionText: "Quvur diametri qanday topiladi?",
     answerOptions: [
+      { id: 1, answerText: "suv tezligiga qarab", isCorrect: false },
+      { id: 2, answerText: "quvur materialiga qarab", isCorrect: false },
       {
-        id: 1,
+        id: 3,
         answerText: "suv sarfiga qarab, formula bo‘yicha",
         isCorrect: true,
       },
-      { id: 2, answerText: "suv tezligiga qarab", isCorrect: false },
-      { id: 3, answerText: "quvur materialiga qarab", isCorrect: false },
       { id: 4, answerText: "formula bo‘yicha", isCorrect: false },
     ],
   },
@@ -2305,14 +2306,14 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "quvur diametri uzunligi, materiali, suv sarfiga",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "quvurdagi suv oqimi tezligiga, quvurning suv sarfiga va suv sifatiga",
         isCorrect: false,
+      },
+      {
+        id: 2,
+        answerText: "quvur diametri uzunligi, materiali, suv sarfiga",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -2325,9 +2326,9 @@ export const questions = [
   {
     questionText: "Uzunligi bo’yicha bosim isrofini aniqlash formulari?",
     answerOptions: [
-      { id: 1, answerText: "h=ALq2; h=1000i*l", isCorrect: true },
-      { id: 2, answerText: "h=Aq2; h=1000i*l", isCorrect: false },
-      { id: 3, answerText: "h=Lq2; h=1000i*l", isCorrect: false },
+      { id: 1, answerText: "h=Aq2; h=1000i*l", isCorrect: false },
+      { id: 2, answerText: "h=Lq2; h=1000i*l", isCorrect: false },
+      { id: 3, answerText: "h=ALq2; h=1000i*l", isCorrect: true },
       { id: 4, answerText: "h=ALq2; h=1000i", isCorrect: false },
     ],
   },
@@ -2335,27 +2336,27 @@ export const questions = [
     questionText:
       "Uzunlik bo‘yicha bosim isrofini topish uchun qanaqa gidravlik elementlarini bilishi kerak?",
     answerOptions: [
-      { id: 1, answerText: "q,d,l", isCorrect: true },
-      { id: 2, answerText: "q,v,l", isCorrect: false },
-      { id: 3, answerText: "q,d,c", isCorrect: false },
+      { id: 1, answerText: "q,v,l", isCorrect: false },
+      { id: 2, answerText: "q,d,c", isCorrect: false },
+      { id: 3, answerText: "q,d,l", isCorrect: true },
       { id: 4, answerText: "q,d,k", isCorrect: false },
     ],
   },
   {
     questionText: "h=ALq2  formuladagi L nima?",
     answerOptions: [
-      { id: 1, answerText: "bo‘lak uzunligi", isCorrect: true },
-      { id: 2, answerText: "quvur diamerti", isCorrect: false },
-      { id: 3, answerText: "suv sarfi", isCorrect: false },
-      { id: 4, answerText: "bosim isrofi", isCorrect: false },
+      { id: 1, answerText: "quvur diamerti", isCorrect: false },
+      { id: 2, answerText: "suv sarfi", isCorrect: false },
+      { id: 3, answerText: "bosim isrofi", isCorrect: false },
+      { id: 4, answerText: "bo‘lak uzunligi", isCorrect: true },
     ],
   },
   {
     questionText:
       "Bir xil uzunlikdagi cho‘yan quvurlarning diametri kattasida bosim isrofi?",
     answerOptions: [
-      { id: 1, answerText: "kichik bo‘ladi", isCorrect: true },
-      { id: 2, answerText: "katta bo‘ladi", isCorrect: false },
+      { id: 1, answerText: "katta bo‘ladi", isCorrect: false },
+      { id: 2, answerText: "kichik bo‘ladi", isCorrect: true },
       { id: 3, answerText: "teng bo‘ladi", isCorrect: false },
       { id: 4, answerText: "umuman o’xshamaydi", isCorrect: false },
     ],
@@ -2363,8 +2364,8 @@ export const questions = [
   {
     questionText: "h = ALq2 formuladagi A nima?",
     answerOptions: [
-      { id: 1, answerText: "solishtirma qarshilik", isCorrect: true },
-      { id: 2, answerText: "suv sarfi", isCorrect: false },
+      { id: 1, answerText: "suv sarfi", isCorrect: false },
+      { id: 2, answerText: "solishtirma qarshilik", isCorrect: true },
       { id: 3, answerText: "\tquvur diamerti", isCorrect: false },
       { id: 4, answerText: "suvning quvurdagi tezligi", isCorrect: false },
     ],
@@ -2372,8 +2373,8 @@ export const questions = [
   {
     questionText: "Vodoprovod tarmog‘ining shakli?",
     answerOptions: [
-      { id: 1, answerText: "xalqasimon va shohsimon", isCorrect: true },
-      { id: 2, answerText: "ichki va tashqi vodoprovod", isCorrect: false },
+      { id: 1, answerText: "ichki va tashqi vodoprovod", isCorrect: false },
+      { id: 2, answerText: "xalqasimon va shohsimon", isCorrect: true },
       {
         id: 3,
         answerText: "xo‘jalik ichimlik, sanoat, o‘t-o‘chirish vodoprovodi",
@@ -2388,14 +2389,14 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "tarmog‘ining 1m uzunligiga to‘g‘ri keluvchi suv miqdori",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "hisobiy bo‘lakning butun uzunligi bo‘yicha olinayotgan suv miqdori",
         isCorrect: false,
+      },
+      {
+        id: 2,
+        answerText: "tarmog‘ining 1m uzunligiga to‘g‘ri keluvchi suv miqdori",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -2408,8 +2409,8 @@ export const questions = [
   {
     questionText: "Gidravlik hisob qachon tugallangan deyiladi?",
     answerOptions: [
-      { id: 1, answerText: "h≤ ±0,5", isCorrect: true },
-      { id: 2, answerText: "h≤ ±0,6", isCorrect: false },
+      { id: 1, answerText: "h≤ ±0,6", isCorrect: false },
+      { id: 2, answerText: "h≤ ±0,5", isCorrect: true },
       {
         id: 3,
         answerText:
@@ -2425,13 +2426,13 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "maksimal xo‘jalik, o‘t o‘chirish va tranzit",
-        isCorrect: true,
+        answerText: "maksimal-xo‘jalik, tranzit va erkin holat",
+        isCorrect: false,
       },
       {
         id: 2,
-        answerText: "maksimal-xo‘jalik, tranzit va erkin holat",
-        isCorrect: false,
+        answerText: "maksimal xo‘jalik, o‘t o‘chirish va tranzit",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -3149,18 +3150,18 @@ export const questions = [
   {
     questionText: "Yaylovlarda sugorish radiusini aniqlash formulasi",
     answerOptions: [
-      { id: 1, answerText: "Rc=Vo’rtt\\2", isCorrect: true },
-      { id: 2, answerText: "Rc=D\\2", isCorrect: false },
-      { id: 3, answerText: "Rc=D\\3", isCorrect: false },
+      { id: 1, answerText: "Rc=D\\2", isCorrect: false },
+      { id: 2, answerText: "Rc=D\\3", isCorrect: false },
+      { id: 3, answerText: "Rc=Vo’rtt\\2", isCorrect: true },
       { id: 4, answerText: "Rc=Vo’rtt\\3", isCorrect: false },
     ],
   },
   {
     questionText: "Bir sugorish punktida sug'oriladigan hayvonlar soni?",
     answerOptions: [
-      { id: 1, answerText: "N=PR2Smay", isCorrect: true },
-      { id: 2, answerText: "N=PR2S", isCorrect: false },
-      { id: 3, answerText: "N=PRSmay", isCorrect: false },
+      { id: 1, answerText: "N=PR2S", isCorrect: false },
+      { id: 2, answerText: "N=PRSmay", isCorrect: false },
+      { id: 3, answerText: "N=PR2Smay", isCorrect: true },
       { id: 4, answerText: "N=AR2Smay", isCorrect: false },
     ],
   },
@@ -3170,21 +3171,21 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "sho‘r suvlarni chuchuklashtirish, buloq kameralari",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "sho‘r suvlarni chuchuklashtirish, yog‘ingarchilik suvlari yig‘ish",
         isCorrect: false,
       },
       {
-        id: 3,
+        id: 2,
         answerText: "yog‘ingarchilik suvlarini yig‘ish, kanaldan olish",
         isCorrect: false,
       },
-      { id: 4, answerText: "daryodan olish", isCorrect: false },
+      { id: 3, answerText: "daryodan olish", isCorrect: false },
+      {
+        id: 4,
+        answerText: "sho‘r suvlarni chuchuklashtirish, buloq kameralari",
+        isCorrect: true,
+      },
     ],
   },
   {
@@ -3193,14 +3194,14 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "yaylovlarni suv bilan ta’minlash",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "suvsiz va kam suvli xudulardagi iste’molchilarni suv bilan ta’minlash",
         isCorrect: false,
+      },
+      {
+        id: 2,
+        answerText: "yaylovlarni suv bilan ta’minlash",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -3219,14 +3220,14 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "inshootlar va tarmoqlarning qurilish narxi",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "vodoprovod tarmogining va suv tashish quvurlarining qurish narxi",
         isCorrect: false,
+      },
+      {
+        id: 2,
+        answerText: "inshootlar va tarmoqlarning qurilish narxi",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -3245,9 +3246,9 @@ export const questions = [
     questionText:
       "Suv ta’minoti tizimini ekspluatatsion xarajatlari nimadan iborat?",
     answerOptions: [
-      { id: 1, answerText: "E=S+A+B+V", isCorrect: true },
-      { id: 2, answerText: "E=S+A+B+H", isCorrect: false },
-      { id: 3, answerText: "E=S+D+B+V", isCorrect: false },
+      { id: 1, answerText: "E=S+A+B+H", isCorrect: false },
+      { id: 2, answerText: "E=S+D+B+V", isCorrect: false },
+      { id: 3, answerText: "E=S+A+B+V", isCorrect: true },
       { id: 4, answerText: "E=A+A+B+V", isCorrect: false },
     ],
   },
@@ -3255,9 +3256,9 @@ export const questions = [
     questionText:
       "Bino balandligi 10 m, o’t o’chirish quvurida bosim isrofi 8,2 m. zaruriy bosim qancha bo’lishi kerak?",
     answerOptions: [
-      { id: 1, answerText: "28,2", isCorrect: true },
-      { id: 2, answerText: "18,2", isCorrect: false },
-      { id: 3, answerText: "8,2", isCorrect: false },
+      { id: 1, answerText: "18,2", isCorrect: false },
+      { id: 2, answerText: "8,2", isCorrect: false },
+      { id: 3, answerText: "28,2", isCorrect: true },
       { id: 4, answerText: "10", isCorrect: false },
     ],
   },
@@ -3266,14 +3267,14 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "bosimli - moslashtiruvchi, berkituvchi, suv taqsimlovchi",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText:
           "suv oluvchi, oqim boshqaruvchi va ehtiyot, bosimni - moslashtiruvchi, berkituvchi suv taqsimlovchi",
         isCorrect: false,
+      },
+      {
+        id: 2,
+        answerText: "bosimli - moslashtiruvchi, berkituvchi, suv taqsimlovchi",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -3286,8 +3287,8 @@ export const questions = [
   {
     questionText: "Po'lat quvurlarni ulanish turlari?",
     answerOptions: [
-      { id: 1, answerText: "payvantlash, rezba yordamida", isCorrect: true },
-      { id: 2, answerText: "payvantlash", isCorrect: false },
+      { id: 1, answerText: "payvantlash", isCorrect: false },
+      { id: 2, answerText: "payvantlash, rezba yordamida", isCorrect: true },
       {
         id: 3,
         answerText: "rastrubli, asbestotsementli mufta yordamida",
@@ -3299,12 +3300,12 @@ export const questions = [
   {
     questionText: "Vodoprovod quvurining yotkizish chuqurligi?",
     answerOptions: [
+      { id: 1, answerText: "0,2m", isCorrect: false },
       {
-        id: 1,
+        id: 2,
         answerText: "tuproqning muzlash chuqurligiga 0,5m  qo’shiladi",
         isCorrect: true,
       },
-      { id: 2, answerText: "0,2m", isCorrect: false },
       {
         id: 3,
         answerText: "tuproqning muzlash chuqurligiga 0.4 m qo’shiladi",
@@ -3318,28 +3319,28 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "tuproqning muzlash chuqurligiga",
-        isCorrect: true,
-      },
-      {
-        id: 2,
         answerText: "quvur diametri, bosim isrof va suvning sifatiga",
         isCorrect: false,
       },
-      { id: 3, answerText: "havoning o‘rtacha haroratiga", isCorrect: false },
-      { id: 4, answerText: "quvurning uzunligiga", isCorrect: false },
+      { id: 2, answerText: "havoning o‘rtacha haroratiga", isCorrect: false },
+      { id: 3, answerText: "quvurning uzunligiga", isCorrect: false },
+      {
+        id: 4,
+        answerText: "tuproqning muzlash chuqurligiga",
+        isCorrect: true,
+      },
     ],
   },
   {
     questionText: "Vodoprovod tarmog‘i uchun qanday quvurlar ishlatiladi?",
     answerOptions: [
-      { id: 1, answerText: "cho‘yan, po‘lat, plastmass", isCorrect: true },
       {
-        id: 2,
+        id: 1,
         answerText:
           "cho‘yan, asbestotsement quvurlar, asbestotsement, temirbeton",
         isCorrect: false,
       },
+      { id: 2, answerText: "cho‘yan, po‘lat, plastmass", isCorrect: true },
       {
         id: 3,
         answerText: "po‘lat, sopol, asbesto-sement quvurlar",
@@ -3354,19 +3355,19 @@ export const questions = [
       {
         id: 1,
         answerText:
-          "vodoprovod jihoz moslamalarini o‘rnatish, uni boshqarish, kuzatish va remont qilish maqsadida",
-        isCorrect: true,
-      },
-      {
-        id: 2,
-        answerText:
           "vodoprovod quvurlarini ulash, yangilash, sinash, quduqlarni montaj qilish, kurish va ekspluatatsiya qilish qulay bo‘lish uchun",
         isCorrect: false,
       },
       {
-        id: 3,
+        id: 2,
         answerText: "suv sarfini bir maromda uzatish uchun",
         isCorrect: false,
+      },
+      {
+        id: 3,
+        answerText:
+          "vodoprovod jihoz moslamalarini o‘rnatish, uni boshqarish, kuzatish va remont qilish maqsadida",
+        isCorrect: true,
       },
       { id: 4, answerText: "suv olish maqsadida", isCorrect: false },
     ],
@@ -3376,13 +3377,13 @@ export const questions = [
     answerOptions: [
       {
         id: 1,
-        answerText: "tarmoq uzunligi bo’yicha xar 100m.da va kesish tugunlarda",
-        isCorrect: true,
+        answerText: "faqat quvur diametri o’zgargan joylarida",
+        isCorrect: false,
       },
       {
         id: 2,
-        answerText: "faqat quvur diametri o’zgargan joylarida",
-        isCorrect: false,
+        answerText: "tarmoq uzunligi bo’yicha xar 100m.da va kesish tugunlarda",
+        isCorrect: true,
       },
       {
         id: 3,
@@ -3395,13 +3396,13 @@ export const questions = [
   {
     questionText: "Xozirgi kunda asbestotsement quvurlar ishlatilyaptimi?",
     answerOptions: [
-      { id: 1, answerText: "ha, faqat  kanalizatsiyada", isCorrect: true },
-      { id: 2, answerText: "yo‘q ishlatilmaydi", isCorrect: false },
+      { id: 1, answerText: "yo‘q ishlatilmaydi", isCorrect: false },
       {
-        id: 3,
+        id: 2,
         answerText: "ha, qishloq  xo‘jaligi suv ta’minotida",
         isCorrect: false,
       },
+      { id: 3, answerText: "ha, faqat  kanalizatsiyada", isCorrect: true },
       {
         id: 4,
         answerText: "faqat gorizontal suv olish inshootida",
